@@ -20,7 +20,7 @@ class Dashboard extends React.Component {
     return (
       <div>
         <div>
-          Dashboard!!!!!
+          Dashboard!
         <input type="button" value="Add Customer" onClick={this.addCustomer} />
         </div>
         <div>

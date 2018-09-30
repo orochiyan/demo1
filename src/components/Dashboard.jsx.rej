@@ -1,0 +1,10 @@
+diff a/src/components/Dashboard.jsx b/src/components/Dashboard.jsx	(rejected hunks)
+@@ -20,7 +20,7 @@
+     return (
+       <div>
+         <div>
+-          Dashboard!
++          Dashboard!!!!
+         <input type="button" value="Add Customer" onClick={this.addCustomer} />
+         </div>
+         <div>
