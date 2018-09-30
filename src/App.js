@@ -3,14 +3,19 @@ import logo from './logo.svg';
 import './App.css';
 import Dashboard from './components/Dashboard';
 import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
+import { Provider } from 'react-redux';
+import { createAppStore } from './store/index';
+const store = createAppStore();
 const App = () => {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/dashboard" component={Dashboard} />
-        <Redirect path="/" to="/dashboard" component={Dashboard} />
-      </Switch>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Switch>
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Redirect path="/" to="/dashboard" component={Dashboard} />
+        </Switch>
+      </Router>
+    </Provider>
   )
 }
 
